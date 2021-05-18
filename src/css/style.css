@@ -6,8 +6,8 @@ body{
 nav{
     width: 100%;
     height: 60px;
-    background: #344051
-    
+    background: #344051;
+    position: fixed;
 }
 
 .logo{
@@ -17,7 +17,14 @@ nav{
     line-height: 60px;
     margin-left: 388px;
     float: left;
-    
+    -webkit-animation: comming 2s;
+    -o-animation: comming 2s;
+    animation: comming 2s;
+}
+
+@keyframes comming{
+    from{opacity: 0;}
+    to {opacity: 1}
 }
 
 .menu{
@@ -32,12 +39,34 @@ nav{
     color: white;
     margin-right: 40px;
     font-size: 16px;
-    text-transform: uppercase;
+    text-transform: uppercase ;
+    text-decoration: none;
     
     }
+
+.menu li a{
+    transition: all 4s;
+    color: white;
+    display: inline-block;
+    transform: scale(1);
+     }
+.menu li a:visited{
+    color: white;
+}
+.menu li a:hover{
+    color: #ee941c;
+    font-family: cursive;
+    
+}
+.menu li a:active{
+    transform: scale(1.1);
+    
+}
+
+
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/Paren.png) 93% 100%/auto 85% no-repeat , url(../img/fon_paren.jpg) center/cover no-repeat;  
     box-shadow: 0px -2px 25px #000 inset;
     
@@ -69,6 +98,16 @@ nav{
     font-size: 13px;
     padding: 0px 16px;
     margin: 50px 14px 0px 14px;
+    transition: all 5s;
+    transform: scale(1);
+}
+.titlr_container input:hover{
+    box-shadow: 0px 0px 5px #6d7682;
+    background: #6d7682;
+    color: white;
+}
+.titlr_container input:active{
+    transform: scale(1.1);
 }
 
 .obo_mne{
@@ -611,6 +650,5 @@ footer{
     line-height: 96px;
     font-family: arial, sans-serif;
     font-size: 16px;
-   
-    
-}
+   }
+
