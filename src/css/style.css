@@ -55,8 +55,7 @@ nav{
 }
 .menu li a:hover{
     color: #ee941c;
-    font-family: cursive;
-    
+        
 }
 .menu li a:active{
     transform: scale(1.1);
