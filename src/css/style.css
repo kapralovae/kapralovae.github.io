@@ -45,16 +45,20 @@ nav{
     }
 
 .menu li a{
-    transition: all 4s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
     color: white;
     display: inline-block;
     transform: scale(1);
      }
 .menu li a:visited{
+    display: block;
     color: white;
 }
 .menu li a:hover{
     color: #ee941c;
+    text-decoration:underline;
         
 }
 .menu li a:active{
@@ -97,7 +101,7 @@ nav{
     font-size: 13px;
     padding: 0px 16px;
     margin: 50px 14px 0px 14px;
-    transition: all 5s;
+    transition: transform 0.2s;
     transform: scale(1);
 }
 .titlr_container input:hover{
@@ -189,7 +193,7 @@ nav{
     display: block;
     width: 211px;
     margin: 107px 0px auto 416px;
-    background: url(../img/nout.jpg) top no-repeat;
+    background: url(../img/nout.png) top no-repeat;
         
 }
 .web p{
@@ -266,7 +270,7 @@ nav{
     display: block;
     width: 211px;
     margin: -163px 0px auto 1296px;
-    background: url(../img/grammofon.jpg) top no-repeat;
+    background: url(../img/grammofon.png) top no-repeat;
     
     
 }
@@ -650,5 +654,4 @@ footer{
     font-family: arial, sans-serif;
     font-size: 16px;
    }
-
 
