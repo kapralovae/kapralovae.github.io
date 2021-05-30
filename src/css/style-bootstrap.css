@@ -139,7 +139,7 @@ nav{
 
 .white-btn:visited{
     color: white;
-    
+}  
 @media (max-width: 991px){
     .titlr_container, .titlr_container h4, .titlr_container input{
         color: white;
