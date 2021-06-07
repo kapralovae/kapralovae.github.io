@@ -298,6 +298,9 @@ nav{
     transition: transform 0.2s;
     transform: scale(1);
 }
+.company>a:visited{
+	display:block;
+}
 .company>a:hover{
     color: #384354;
     text-decoration: underline;
