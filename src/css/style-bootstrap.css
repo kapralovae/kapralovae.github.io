@@ -249,7 +249,6 @@ nav{
     
 }
 
-
 .chto_ya_umeyu_container p{
     font-size: 18px;
     color: #cf7600;
@@ -262,6 +261,15 @@ nav{
     text-shadow: 0.3px 0px 0px #3f495a;
     color: #3f495a;
 }
+.adapt img{
+   height: 47px;
+}
+
+.adapt p{
+    padding: 10px 0px;
+}
+
+
 .case_container{
     margin-top: 109px;
 }
@@ -298,15 +306,13 @@ nav{
     transition: transform 0.2s;
     transform: scale(1);
 }
-.company>a:visited{
-	display:block;
-}
+
 .company>a:hover{
     color: #384354;
     text-decoration: underline;
     }
 .company>a:active{
-    transform: scale(2);
+    transform: scale(0.9);
 }
 
 .company input{
@@ -347,6 +353,12 @@ nav{
 
 .raschet_stoimosti{
     margin-top: 200px;
+}
+.parametri_rascheta{
+box-shadow: 0px -1px 20px rgba(0,0,0,0.3);
+}
+.parametri_rascheta select{
+    background: #efefef;
 }
 .parametri_rascheta h2{
     font-size: 32px;
@@ -419,17 +431,26 @@ nav{
     color: #323e4f;
     font-size: 30px;
     text-transform: uppercase;
-    padding: 20px 0px;
-    text-align: center;
+    padding: 10px 0px;
 }
 .statistic span{
+    height: 20px;
     display: flex;
     font-family: 'Libre Franklin', sans-serif;
     color: #323e4f;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
+    align-items:center;
+    margin-bottom: 30px;
 }
+
+.custom img{
+    height: 52px;
+    align-items:flex-start;
+    
+}
+
 .otziv{
     margin-top: 100px;
 }
@@ -479,13 +500,6 @@ input.subm{
     border: 1px solid #fff;
     border-radius: 5px;
 }
-.in_name{
-   
-   margin-right: 1px;
-}
-  .in_e-mail{
-    
-}
 .contact textarea{
     height: 94px;
    
@@ -505,9 +519,17 @@ footer{
    }
 
 @media (max-width: 767px){
-    .chto_ya_umeyu_container p{
-        height: 20px;
-        display: flex;
-        align-items: center;
-        padding-bottom: 20px;
+    .chto_ya_umeyu_container{
+   background: url(../img/kart_fon.jpg) /50% 100% top no-repeat  ;
 }
+@media (max-width: 575px){
+    .company{
+   text-align: center;
+}
+@media (max-width: 575px){
+    .e-mail{
+   margin: 10px 0px;
+}
+    .textarea{
+        border: 1px solid #222;
+    }
