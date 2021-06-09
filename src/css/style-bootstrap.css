@@ -238,7 +238,7 @@ nav{
 .chto_ya_umeyu{
     margin-top: 97px;
     margin-bottom: 0px;
-    background: url(../img/kart_fon.jpg)  center no-repeat  ;
+    background: url(../img/kart_fon.jpg) 100% 100% repeat ;
 }
 
 .chto_ya_umeyu_container h2{
@@ -475,7 +475,7 @@ box-shadow: 0px -1px 20px rgba(0,0,0,0.3);
 
 .my_contact{
     margin-top: 94px;
-    height: 808px;
+    height: 1000px; /*808*/
     background: url(../img/fon_blue.jpg) no-repeat center;
     color: #fff;
 }
@@ -491,6 +491,12 @@ box-shadow: 0px -1px 20px rgba(0,0,0,0.3);
 .contact h5{
     font-size: 16px;
 }
+
+.form>input{
+    width: 10%;
+    flex: 1 0 100px;
+}
+
 input.subm{
     display: block;
     width: 126px;
@@ -529,7 +535,12 @@ footer{
 @media (max-width: 575px){
     .e-mail{
    margin: 10px 0px;
-}
+        }
+    .info{
+        margin: 0px 0px;
+    }
+    }
+    
     .textarea{
         border: 1px solid #222;
     }
