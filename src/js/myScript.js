@@ -4,7 +4,7 @@ $(document).ready(function(){
     
     let options = {threshold: [0.5]};
     let observer = new IntersectionObserver(onEntry, options);
-     let elements = $('.obo_mne.img');
+     let elements = $('.obo_mne img');
     elements.each((i, el) => {
         observer.observe(el);
     });
@@ -13,13 +13,13 @@ $(document).ready(function(){
         entry.forEach(change => {
            if(change.isIntersecting){
               
-                change.target.src = change.target.dataset.scr;
+                change.target.src = change.target.dataset.src;
            } 
         });
     }
 
     
-$(window).scrill( () => {
+$(window).scroll( () => {
     let scrollDistance = $(window).scrollTop();
     
     $(".selection").each((i, el) => {
