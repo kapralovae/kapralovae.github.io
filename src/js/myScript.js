@@ -93,95 +93,95 @@ $(document).ready([outNum(120, 'out-1'), outNum(4600, 'out-2'), outNum(340, 'out
 
 
 
-//
-//let arr_tip = ["1-Визитка " , "2-Интернет магазин ", "3-Другое ",];
-//let tipSaita = prompt('Какой тип сайта Вам нужен? Ответ дайте цифрой.', arr_tip);
-//
-//console.log(tipSaita);
-//
-//if(tipSaita == 3){
-//    
-//    var tipDrugoi = alert('Вы выбрали ответ другое, для оценки стоимости пишите на почту.', );
-//   
-//  console.log(tipSaita);
-//  console.log(tipDrugoi);  
-//}
-//console.log(tipSaita);
-//
-//let srok_tip;
-//let price_tip;
-//
-//
-//if (tipSaita == 1){
-//    srok_tip = 2;
-//    price_tip = 5000;
-//    
-//}
-//
-//if (tipSaita == 2){
-//    srok_tip = 5;
-//    price_tip = 25000;
-//}
-//
-//if (tipSaita == 3){
-//    srok_tip = "Несколько дней +";
-//    price_tip = "Несколько рублей + ";
-//}
-//
-//let arr_design = ["1-Деловой " , "2-Обычный ", "3-На Ваш вкус ",];
-//let design = prompt('Какой дизайн сайта Вам нужен? Ответ дайте цифрой.', arr_design);
-//
-//console.log(design);
-//
-//let arr_adaptivnost = ["1-Для телефонов и планшетов" , "2-Для ПК", "3-И для мобильных и для ПК"];
-//let adaptivnost = prompt('Для каких устройтсв (целевой аудитории)  Вам нужен сайт? Ответ дайте цифрой.', arr_adaptivnost);
-//
-//console.log(adaptivnost);
-//
-//let srok_adaptivnost;
-//let price_adaptivnost;
-//
-//if (adaptivnost == 1){
-//    srok_adaptivnost = 4;
-//    price_adaptivnost = 3000;
-//}
-//
-//if (adaptivnost == 2){
-//    srok_adaptivnost = 3;
-//    price_adaptivnost = 2000;
-//}
-//
-//if (adaptivnost == 3){
-//    srok_adaptivnost = 6;
-//    price_adaptivnost = 5000;
-//}
-//
-//if (adaptivnost == 4){
-//    srok_adaptivnost = "Неизвестно сколько";
-//}
-//
-//let sroki = srok_tip + srok_adaptivnost + " дней";
-//let price = price_tip + price_adaptivnost + " рублей";
-//
-//if (tipSaita == 3 || adaptivnost == 4){
-//    alert("Нужно обсуждать ТЗ");
-//}
-//else{
-//    alert("Срок в рабочих днях: " + sroki);
-//    alert("Приблизительная стоимость: " + price + " рублей");
-//}
-//
-//function outChoiceSroki(t, element){
-//let i = document.querySelector('#' + element);
-////    t = sroki;
-//i.innerHTML = t;
-//}
-//
-//outChoiceSroki(sroki, 'outSroki');
-//outChoiceSroki(price, 'outPrice');
-//
-//
-//document.getElementById('tip1').options[tipSaita].selected=true;
-//document.getElementById('tip2').options[design].selected=true;
-//document.getElementById('tip3').options[adaptivnost].selected=true;
+
+let arr_tip = ["1-Визитка " , "2-Интернет магазин ", "3-Другое ",];
+let tipSaita = prompt('Какой тип сайта Вам нужен? Ответ дайте цифрой.', arr_tip);
+
+console.log(tipSaita);
+
+if(tipSaita == 3){
+    
+    var tipDrugoi = alert('Вы выбрали ответ другое, для оценки стоимости пишите на почту.', );
+   
+  console.log(tipSaita);
+  console.log(tipDrugoi);  
+}
+console.log(tipSaita);
+
+let srok_tip;
+let price_tip;
+
+
+if (tipSaita == 1){
+    srok_tip = 2;
+    price_tip = 5000;
+    
+}
+
+if (tipSaita == 2){
+    srok_tip = 5;
+    price_tip = 25000;
+}
+
+if (tipSaita == 3){
+    srok_tip = "Несколько дней +";
+    price_tip = "Несколько рублей + ";
+}
+
+let arr_design = ["1-Деловой " , "2-Обычный ", "3-На Ваш вкус ",];
+let design = prompt('Какой дизайн сайта Вам нужен? Ответ дайте цифрой.', arr_design);
+
+console.log(design);
+
+let arr_adaptivnost = ["1-Для телефонов и планшетов" , "2-Для ПК", "3-И для мобильных и для ПК"];
+let adaptivnost = prompt('Для каких устройтсв (целевой аудитории)  Вам нужен сайт? Ответ дайте цифрой.', arr_adaptivnost);
+
+console.log(adaptivnost);
+
+let srok_adaptivnost;
+let price_adaptivnost;
+
+if (adaptivnost == 1){
+    srok_adaptivnost = 4;
+    price_adaptivnost = 3000;
+}
+
+if (adaptivnost == 2){
+    srok_adaptivnost = 3;
+    price_adaptivnost = 2000;
+}
+
+if (adaptivnost == 3){
+    srok_adaptivnost = 6;
+    price_adaptivnost = 5000;
+}
+
+if (adaptivnost == 4){
+    srok_adaptivnost = "Неизвестно сколько";
+}
+
+let sroki = srok_tip + srok_adaptivnost + " дней";
+let price = price_tip + price_adaptivnost + " рублей";
+
+if (tipSaita == 3 || adaptivnost == 4){
+    alert("Нужно обсуждать ТЗ");
+}
+else{
+    alert("Срок в рабочих днях: " + sroki);
+    alert("Приблизительная стоимость: " + price + " рублей");
+}
+
+function outChoiceSroki(t, element){
+let i = document.querySelector('#' + element);
+//    t = sroki;
+i.innerHTML = t;
+}
+
+outChoiceSroki(sroki, 'outSroki');
+outChoiceSroki(price, 'outPrice');
+
+
+document.getElementById('tip1').options[tipSaita].selected=true;
+document.getElementById('tip2').options[design].selected=true;
+document.getElementById('tip3').options[adaptivnost].selected=true;
 
