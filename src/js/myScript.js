@@ -40,7 +40,7 @@ $('a[href^="#"]').click(function(){
     let valHref = $(this).attr("href");
     $('html, body').animate({scrollTop: $(valHref).offset().top -60 + "px"});
 }); 
-    });
+    
 
 $(document).ready(function() {
   $('.image-link').magnificPopup({type:'image'});
@@ -127,6 +127,11 @@ if (tipSaita == 3){
     srok_tip = "Несколько дней +";
     price_tip = "Несколько рублей + ";
 }
+    if (tipSaita == 0 || tipSaita > 3){
+    srok_tip = "";
+    price_tip = "";
+    
+}
 
 let arr_design = ["1-Деловой " , "2-Обычный ", "3-На Ваш вкус ",];
 let design = prompt('Какой дизайн сайта Вам нужен? Ответ дайте цифрой.', arr_design);
@@ -159,6 +164,11 @@ if (adaptivnost == 3){
 if (adaptivnost == 4){
     srok_adaptivnost = "Неизвестно сколько";
 }
+    if (adaptivnost == 0 || adaptivnost > 4){
+   srok_adaptivnost = "Неизвестно сколько";
+   price_adaptivnost = "Неизвестно сколько";
+    
+}
 
 let sroki = srok_tip + srok_adaptivnost + " дней";
 let price = price_tip + price_adaptivnost + " рублей";
@@ -185,3 +195,4 @@ document.getElementById('tip1').options[tipSaita].selected=true;
 document.getElementById('tip2').options[design].selected=true;
 document.getElementById('tip3').options[adaptivnost].selected=true;
 
+});
