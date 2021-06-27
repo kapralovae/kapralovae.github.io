@@ -25,12 +25,12 @@ $(window).scroll( () => {
     $(".section").each((i, el) => {
         if ($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
             $("nav a").each((i, el) => {
-                if($(el).hasClass("active")){
-                    $(el).removeClass("active");
+                if($(el).hasClass("active1")){
+                    $(el).removeClass("active1");
             }
         });
             
-            $('nav li:eq('+ i + ')').find('a').addClass('active');
+            $('nav li:eq('+ i + ')').find('a').addClass('active1');
     }
 });
                  
