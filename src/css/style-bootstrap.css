@@ -618,3 +618,7 @@ footer{
     .textarea{
         border: 1px solid #222;
     }
+	
+.active{
+	color: #000;
+	}
