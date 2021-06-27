@@ -55,6 +55,7 @@ nav{
         
 }
 
+
 .menu li{
     float: left;
     line-height: 60px;
@@ -79,6 +80,7 @@ nav{
     animation: comming 2s;
     text-decoration: none;
      }
+
 .menu li a:visited{
     display: block;
     color: white;
@@ -92,6 +94,11 @@ nav{
     transform: scale(1.1);
     
 }
+
+.nav-link.active1{
+    color: #ee941c !important;
+    }
+
 .comment-1{
     
     text-decoration: underline;
@@ -602,10 +609,12 @@ footer{
     .chto_ya_umeyu_container{
    background: url(../img/kart_fon.jpg) /50% 100% top no-repeat  ;
 }
+}
 @media (max-width: 575px){
     .company{
    text-align: center;
 }
+    }
 @media (max-width: 575px){
     .e-mail{
    margin: 10px 0px;
@@ -617,8 +626,6 @@ footer{
     
     .textarea{
         border: 1px solid #222;
-    }
-	
-.active{
-	color: #000;
-	}
+}
+   
+
