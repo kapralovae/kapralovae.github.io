@@ -19,7 +19,7 @@ $(document).ready(function(){
         });
     }
 
-function OnSelectionChange(selectObject) {
+function onSelectionChange(selectObject) {
 var value = selectObject.value;  
 console.log(value);
 }
